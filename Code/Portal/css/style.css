@@ -1,0 +1,17 @@
+#container{
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+}
+html,
+body,
+.view{
+    height: 100%;
+}
+.view{
+    background: url("empty.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

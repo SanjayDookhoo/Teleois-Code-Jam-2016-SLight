@@ -1,0 +1,30 @@
+NB* to run a python file, i.e. x.py, type in terminal "python x.py", without the quotes
+
+To increase usability:
+    Multiple pis existing that can be linked together, where each pi must send and receive data to its trailing and leading pis. 
+    
+    To do:
+        In IPAddresses.txt place amount of pi's linked in circular form on the first line.
+        For every pi place its IPAddress(hostname -I) in line + 2. 
+            Example the second pi of IPAddress 192.168.3.103 will be placed in line 3
+        extra new line space at end
+        
+        Example: for 5 pis:
+        
+        5
+        192.168.3.103
+        192.168.3.104
+        192.168.3.105
+        192.168.3.106
+        192.168.3.109
+        
+        run file genClientServer.py in terminal to generate the client and servers for each file
+        run file genPiCode.py in terminal to generate the files for each pi
+        copy the files from the "To Copy" folder and copy directly into the generated/piX folders.
+        Copy pi folders into pi and enter terminal for that new folder. 
+        run file "SLightCore.py" from terminal 
+        When all SLightCore.py is running on all pis, the pis will connect together 
+        
+        Used for setting up on the road
+            testingLeds.py in the folder "Testing" is used to determine which led is turning on with which gpio in the array
+            testingSensors.py in the folder "Testing" is used to determine which sensor is turning on with which gpio in the array
